@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@1&family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Bungee+Shade&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+}
+
+.card {
+	min-height: 200px;
+	width: 260px;
+	margin: 40px 10px;
+	padding: 1rem;
+	cursor: pointer;
+	background-color: #870202;
+	border: 1px solid white;
+	box-shadow: 0 0 5px rgb(255 240 243), 0 0 10px rgb(216, 2, 2),
+		0 0 15px rgb(255, 87, 87), 0 0 20px rgb(214, 7, 45),
+		0 0 25px rgb(254, 88, 88), 0 0 30px rgb(99, 4, 4);
+	border-radius: 10px;
+}
+.card img {
+	width: 100%;
+	height: 160px;
+	border-radius: 10px;
+	position: relative;
+	z-index: 1000;
+	transition: all 0.3s ease-in-out;
+}
+.card__content {
+	margin: 0.8rem 0;
+	color: #222;
+	overflow: hidden;
+	margin-top: -200px;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.5s ease-in-out;
+}
+
+.nombre {
+	margin: 1rem;
+	text-align: center;
+	color: initial;
+	font-family: "Bungee Shade", cursive;
+	font-size: 25px;
+	color: aliceblue;
+}
+
+.genres {
+	font-size: 25px;
+	line-height: 1.8rem;
+	text-align: center;
+	color: antiquewhite;
+	font-family: "Alumni Sans Inline One", cursive;
+}
+
+.rating {
+	font-size: 1.5rem;
+	line-height: 1.8rem;
+	text-align: center;
+	color: antiquewhite;
+	font-family: "Nunito", sans-serif;
+}
+
+.navLink {
+	width: 200px;
+	padding: 10px 15px;
+	display: block;
+	text-align: center;
+	margin: 0.6rem auto;
+	font-size: 1.1rem;
+	color: #ffcdb2;
+	text-decoration: none;
+	background-color: #2b2d42;
+	border-radius: 10px;
+	transition: 0.3s;
+	font-family: "Nunito", sans-serif;
+}
+
+.navLink:hover {
+	color: #fff;
+	background-color: #000;
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+.card:hover img {
+	margin-top: -60px;
+	box-shadow: 0 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+.card:hover > .card__content {
+	margin-top: 0;
+	opacity: 1;
+	visibility: visible;
+}
+@media screen and (max-width: 800px) {
+	.container {
+		flex-wrap: wrap;
+	}
+}

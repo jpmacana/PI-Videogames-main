@@ -1,0 +1,18 @@
+.mario {
+	margin: 0;
+	padding: 0;
+}
+
+.mario img {
+	background-size: cover;
+	height: 600px;
+	padding-bottom: 5%;
+	padding-top: 5%;
+	/* width: 60%; */
+}
+
+.mario h1 {
+	font-size: 70px;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	color: firebrick;
+}
