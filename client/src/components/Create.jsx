@@ -42,7 +42,7 @@ function validate(input) {
 		errors.rating = "El rating no puede ser un numero negativo";
 	}
 
-	return errors; //la funcion validate devuelve el objeto errors, ya sea vacio o con alguna propiedad si es q encuentra un error
+	return errors; //*la funcion validate devuelve el objeto errors, ya sea vacio o con alguna propiedad si es q encuentra un error
 }
 
 export default function Create() {
@@ -56,7 +56,7 @@ export default function Create() {
 		platforms: [],
 	});
 
-	const [errors, setErrors] = useState({}); //me creo un estado local, en donde errors = {}
+	const [errors, setErrors] = useState({}); //*me creo un estado local, en donde errors = {}
 
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
@@ -76,14 +76,14 @@ export default function Create() {
 		if (noRepeat.length !== 0) {
 			alert("Ya existe un juego con ese nombre, por favor elija otro");
 		} else {
-			let error = Object.keys(validate(input)); // Object.keys(errors) --> errors = {} => devuelve un array de strings q representa todas las propiedades del objeto
-			//solo habra propiedades si es que HAY ALGUN ERROR
+			let error = Object.keys(validate(input)); //* Object.keys(errors) --> errors = {} => devuelve un array de strings q representa todas las propiedades del objeto
+			//*solo habra propiedades si es que HAY ALGUN ERROR
 			if (
 				error.length !== 0 ||
 				!input.genres.length ||
 				!input.platforms.length
 			) {
-				//Entonces si hay algun error, error va a ser un array con la propiedad en donde haya un error, osea que su length !== 0
+				//*Entonces si hay algun error, error va a ser un array con la propiedad en donde haya un error, osea que su length !== 0
 				alert("Llene los campos correctamente");
 				return;
 			} else {
