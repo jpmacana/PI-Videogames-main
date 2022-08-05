@@ -16,7 +16,7 @@ body {
 		#fecfef 99%,
 		#fecfef 100%
 	);
-	box-shadow: 0 0 4px rgb(255 240 243), 0 0 8px rgb(255 204 213),
+	box-shadow: 0 0 4px rgb(255, 180, 195), 0 0 8px rgb(255 204 213),
 		0 0 12px rgb(255 179 193), 0 0 16px rgb(255 143 163),
 		0 0 20px rgb(255 117 143), 0 0 24px rgb(255 77 109);
 }

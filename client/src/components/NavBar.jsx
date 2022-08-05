@@ -15,7 +15,6 @@ export default function NavBar() {
 	};
 
 	return (
-		// <div className={s.box}>
 		<nav className={s.nav}>
 			<div className={s.busqueda}>
 				<SearchBar />

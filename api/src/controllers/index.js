@@ -74,11 +74,10 @@ const nameApi = async (name) => {
 
 	try {
 		const vgSearch = await infoSearch.data.results.map((el) => {
-			//[{}, {}, {}]
+			//*[{}, {}, {}]
 			return {
 				id: el.id,
 				name: el.name,
-				//released: el.released,
 				image: el.background_image,
 				rating: el.rating,
 				platforms: el.platforms?.map((el) => el.platform.name),
