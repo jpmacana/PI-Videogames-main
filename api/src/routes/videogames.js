@@ -48,4 +48,24 @@ router.get("/platforms", async (req, res, next) => {
 	}
 });
 
+router.get("/:platforms", async (req, res, next) => {
+	const { platforms } = req.params;
+
+	const data = await infoTotal();
+
+	const pc = data.filter((vg) => i.platforms === "PC");
+
+	pc ? res.status(200).json(pc) : res.status(404).send("Error");
+});
+
 module.exports = router;
+
+// router.get("/:rating"),
+// 	async (req, res) => {
+// 		const { rating } = req.params;
+// 		let vg = await infoTotal();
+// 		const ratingMayor = vg.filter((e) => e.rating > rating);
+// 		ratingMayor
+// 			? res.status(200).send(ratingMayor)
+// 			: res.satus(404).send("no hay juegos con mayor raiting");
+// 	};

@@ -28,7 +28,7 @@ body {
 	text-transform: uppercase;
 	display: block;
 	font-size: 100px;
-	color: #ff0000;
+	color: whitesmoke;
 	text-shadow: 0 8px 9px #d90000, 0px -2px 1px #f36060;
 	font-weight: bold;
 	letter-spacing: -4px;
@@ -48,7 +48,7 @@ body {
 	border-style: none;
 	box-shadow: #c60707 0 -12px 6px inset;
 	box-sizing: border-box;
-	color: #000000;
+	color: whitesmoke;
 	cursor: pointer;
 	display: inline-block;
 	font-family: -apple-system, sans-serif;
