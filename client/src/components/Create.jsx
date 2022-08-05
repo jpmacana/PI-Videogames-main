@@ -41,8 +41,6 @@ function validate(input) {
 	} else if (input.rating < 0) {
 		errors.rating = "El rating no puede ser un numero negativo";
 	}
-
-	return errors; //* La funcion validate devuelve el objeto errors, ya sea vacio o con alguna propiedad si es q encuentra un error.
 }
 
 export default function Create() {
