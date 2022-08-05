@@ -9,7 +9,6 @@ import {
 	filterBySource,
 	orderBy,
 	getAllVideogames,
-	getPlatforms,
 } from "../redux/actions";
 
 export default function Home() {
@@ -66,17 +65,6 @@ export default function Home() {
 		}
 	}
 
-	function handlePC(e) {
-		e.preventDefault();
-		if (e.target.value === "PC") {
-			dispatch(getAllVideogames());
-		} else {
-			dispatch(getPlatforms(e.target.value));
-			setCurrentPage(1);
-		}
-		console.log();
-	}
-
 	return (
 		<div>
 			<div>
@@ -89,9 +77,7 @@ export default function Home() {
 					handleSource={handleSource}
 				/>
 			</div>
-			<div>
-				<button onClick={(e) => handlePC(e)}>Mostrar VideoJuegos PC</button>
-			</div>
+
 			<div>
 				<Videogames currentGames={currentGames} />{" "}
 				{/*porcion de juegos que se van a renderizar por pagina*/}
